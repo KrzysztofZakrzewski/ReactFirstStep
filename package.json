@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/KrzysztofZakrzewski/ReactFirstStep/issues"
   },
-  "homepage": "https://github.com/KrzysztofZakrzewski/ReactFirstStep#readme"
+  "homepage": "https://github.com/KrzysztofZakrzewski/ReactFirstStep#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
 }
