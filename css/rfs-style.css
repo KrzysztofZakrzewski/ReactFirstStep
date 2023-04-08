@@ -53,4 +53,16 @@
   color: green;
   font-size: 1em;
 }
+
+.section a {
+  font-size: 2em;
+  color: aqua;
+  text-decoration: none;
+}
+
+.section .img {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
 /*# sourceMappingURL=rfs-style.css.map */
