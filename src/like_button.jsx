@@ -47,11 +47,12 @@ class LikeButton extends React.Component {
 let domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(<LikeButton />, domContainer);
 
-const asd = <p>jkhskjhsd</p>
 
-const userPic = './img/Frame1000003602.png';
-
-const userPicture = <img src={userPic}></img>;
-
+// proper way to render things
 let img = ReactDOM.createRoot(document.getElementById('img'));
+const userPic = './img/Frame1000003602.png';
+const userPicture = <img src={userPic}></img>;
 img.render(userPicture);
+
+
+

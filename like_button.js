@@ -92,15 +92,8 @@ var LikeButton = function (_React$Component) {
 var domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(React.createElement(LikeButton, null), domContainer);
 
-var asd = React.createElement(
-	'p',
-	null,
-	'jkhskjhsd'
-);
-
-var userPic = './img/Frame1000003602.png';
-
-var userPicture = React.createElement('img', { src: userPic });
-
+// proper way to render things
 var img = ReactDOM.createRoot(document.getElementById('img'));
+var userPic = './img/Frame1000003602.png';
+var userPicture = React.createElement('img', { src: userPic });
 img.render(userPicture);
