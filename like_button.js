@@ -44,3 +44,10 @@ var LikeButton = function (_React$Component) {
 
 var domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(React.createElement(LikeButton, null), domContainer);
+
+var root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(
+  'h1',
+  null,
+  'Witaj, \u015Bwiecie!'
+));
