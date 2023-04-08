@@ -10,54 +10,73 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var nameX = 'Grzegorz';
 var element = React.createElement(
-  'h1',
-  null,
-  'Witaj, ',
-  nameX
+		'h1',
+		null,
+		'Witaj, ',
+		nameX
 );
 
 var root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(React.createElement(
-  'h1',
-  null,
-  'Witaj, \u015Bwiecie!'
+		'h1',
+		null,
+		'Witaj, \u015Bwiecie!'
 ));
 
 var root2 = ReactDOM.createRoot(document.getElementById('root2'));
 root2.render(element);
 
+function formatName(user) {
+		return user.firstname + ' ' + user.lastname;
+}
+
+var user = {
+		firstname: 'Gorge',
+		lastname: 'Bettlenosie'
+};
+
+var prevUser = React.createElement(
+		'h1',
+		null,
+		'Witaj, ',
+		formatName(user)
+);
+
+var root3 = ReactDOM.createRoot(document.getElementById('root3'));
+root3.render(prevUser);
+
 var LikeButton = function (_React$Component) {
-  _inherits(LikeButton, _React$Component);
+		_inherits(LikeButton, _React$Component);
 
-  function LikeButton(props) {
-    _classCallCheck(this, LikeButton);
+		function LikeButton(props) {
+				_classCallCheck(this, LikeButton);
 
-    var _this = _possibleConstructorReturn(this, (LikeButton.__proto__ || Object.getPrototypeOf(LikeButton)).call(this, props));
+				var _this = _possibleConstructorReturn(this, (LikeButton.__proto__ || Object.getPrototypeOf(LikeButton)).call(this, props));
 
-    _this.state = { liked: false };
-    return _this;
-  }
+				_this.state = { liked: false };
+				return _this;
+		}
 
-  _createClass(LikeButton, [{
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
+		_createClass(LikeButton, [{
+				key: 'render',
+				value: function render() {
+						var _this2 = this;
 
-      if (this.state.liked) {
-        return 'You liked this.';
-      }
+						if (this.state.liked) {
+								return 'You liked this.';
+						}
 
-      return React.createElement(
-        'button',
-        { onClick: function onClick() {
-            return _this2.setState({ liked: true });
-          } },
-        'Like'
-      );
-    }
-  }]);
+						return React.createElement(
+								'button',
+								{ onClick: function onClick() {
+												return _this2.setState({ liked: true });
+										} },
+								'Like'
+						);
+				}
+		}]);
 
-  return LikeButton;
+		return LikeButton;
 }(React.Component);
 
 var domContainer = document.querySelector('#like_button_container');
