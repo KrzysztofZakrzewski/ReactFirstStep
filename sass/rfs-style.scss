@@ -5,3 +5,33 @@
 	margin: 0;
 	padding: 0;
 }
+
+.section{
+	height: 100svh;
+	width: 100svw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #292b2e;
+	.to-change{
+		font-size: 2em;
+		color: rgba(216, 148, 148, 0.563);
+	}
+	#like_button_container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		width: 300px;
+		height: 100px;
+		background-color: rgba(206, 184, 184, 0.5);
+		button{
+			width: 100px;
+			height: 40px;
+			color: green;
+			font-size: 1em;
+
+		}
+	}
+}
